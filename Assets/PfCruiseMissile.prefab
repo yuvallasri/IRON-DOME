@@ -40,7 +40,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3956545706807500900}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf4aa927405282648938fca72e63fded, type: 3}
   m_Name: 
@@ -162,11 +162,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3669557367380565722}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 4ab581e06f3b88042b9154887d4c359e,
+    - target: {fileID: -7395137040929257019, guid: 4ab581e06f3b88042b9154887d4c359e,
         type: 3}
-      propertyPath: m_Name
-      value: CruiseMissile
-      objectReference: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e494807fe98891c4dba63bd86cc64aea, type: 2}
     - target: {fileID: -4216859302048453862, guid: 4ab581e06f3b88042b9154887d4c359e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -222,16 +222,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7395137040929257019, guid: 4ab581e06f3b88042b9154887d4c359e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e494807fe98891c4dba63bd86cc64aea, type: 2}
     - target: {fileID: -3786704959813073318, guid: 4ab581e06f3b88042b9154887d4c359e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e494807fe98891c4dba63bd86cc64aea, type: 2}
+    - target: {fileID: -927199367670048503, guid: 4ab581e06f3b88042b9154887d4c359e,
+        type: 3}
+      propertyPath: m_Name
+      value: CruiseMissile
+      objectReference: {fileID: 0}
     - target: {fileID: 5575115065722428287, guid: 4ab581e06f3b88042b9154887d4c359e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

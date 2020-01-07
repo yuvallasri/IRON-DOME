@@ -30,5 +30,9 @@ public class myRocket : MonoBehaviour
 
         }
     }
+    private void OnDestroy()
+    {
+        
+    }
 
 }
