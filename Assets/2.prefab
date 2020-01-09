@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3669557367380565722}
-  - component: {fileID: 6152518788729284063}
   - component: {fileID: -7360514373436766528}
+  - component: {fileID: 915258589753580231}
+  - component: {fileID: 4796568383477345122}
   m_Layer: 0
   m_Name: PfCruiseMissile
   m_TagString: Untagged
@@ -33,18 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &6152518788729284063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3956545706807500900}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf4aa927405282648938fca72e63fded, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &-7360514373436766528
 AudioSource:
   m_ObjectHideFlags: 0
@@ -141,6 +130,39 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &915258589753580231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956545706807500900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4a0b86a07f5534f8d6f443c44d13f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rockettarget: {fileID: 5400121244872010770, guid: ef4a88f8c5ca4dc4ba68d1bf1562e4c6,
+    type: 3}
+  missilerig: {fileID: 4796568383477345122}
+  turn: 10
+  missilevel: 150
+--- !u!54 &4796568383477345122
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956545706807500900}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
 --- !u!64 &5443799109861520187
 MeshCollider:
   m_ObjectHideFlags: 0
