@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5400121244872010770}
   - component: {fileID: 7832053797247850708}
-  - component: {fileID: -7536767882732276915}
-  - component: {fileID: 7740264991050252257}
+  - component: {fileID: 7177149465607579309}
   m_Layer: 0
-  m_Name: missile
+  m_Name: atackMissile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,24 +49,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-7536767882732276915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5400121244872010773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c4a0b86a07f5534f8d6f443c44d13f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rockettarget: {fileID: 5400121244872010770, guid: ef4a88f8c5ca4dc4ba68d1bf1562e4c6,
-    type: 3}
-  missilerig: {fileID: 7832053797247850708}
-  turn: 10
-  missilevel: 150
---- !u!96 &7740264991050252257
+--- !u!96 &7177149465607579309
 TrailRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
@@ -85,6 +67,8 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -127,7 +111,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.6603774, g: 0.6043076, b: 0.6043076, a: 1}
+      key0: {r: 0.8962264, g: 0.059184745, b: 0.059184745, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -162,7 +146,7 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
-  m_Emitting: 1
+  m_Emitting: 0
 --- !u!136 &6870168623605400801
 CapsuleCollider:
   m_ObjectHideFlags: 0

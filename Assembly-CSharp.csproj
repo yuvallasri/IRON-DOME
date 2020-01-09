@@ -63,8 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CursorsAndCrosshairs\CursorChanger.cs" />
     <Compile Include="Assets\MainMenu.cs" />
+    <Compile Include="Assets\MissileMovment.cs" />
     <Compile Include="Assets\missiletest\missiletest.cs" />
     <Compile Include="Assets\myRocket.cs" />
     <Compile Include="Assets\PlayerLook.cs" />
