@@ -7,7 +7,6 @@ public class myRocket : MonoBehaviour
    
    
     public GameObject rocket;
-    GameObject rocketclone;
        void Update()
     { 
 
@@ -16,8 +15,8 @@ public class myRocket : MonoBehaviour
 
         {
 
-            rocketclone = Instantiate(rocket, transform.position, Quaternion.identity) as GameObject;
-            Destroy(rocketclone, 10);
+            Instantiate(rocket, transform.position,transform.rotation);
+            Destroy(rocket, 10);
 
         }
     }

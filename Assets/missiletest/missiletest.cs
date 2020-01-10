@@ -13,7 +13,7 @@ public class missiletest : MonoBehaviour
 
             missilerig.velocity = transform.forward * missilevel;
             var missiletargetrotation = Quaternion.LookRotation(rockettarget.position - transform.position);
-            missilerig.MoveRotation(Quaternion.RotateTowards(transform.rotation, missiletargetrotation, turn));
+            missilerig.MoveRotation(Quaternion.RotateTowards(transform.rotation,missiletargetrotation,turn));
 
     }
    
