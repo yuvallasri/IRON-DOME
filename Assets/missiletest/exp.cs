@@ -5,7 +5,6 @@ using UnityEngine;
 public class exp : MonoBehaviour
 {
     public GameObject expeffect;
-    bool hasexplo = false;
 
     public void Update()
     {
@@ -15,11 +14,10 @@ public class exp : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (hasexplo == false)
-        {
+       
             Instantiate(expeffect, transform.position, transform.rotation);
             Destroy(gameObject);
-        }
+        
        
     }
 }
