@@ -1257,10 +1257,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 951100733888911776, guid: 47845b4f83ac4644f9163ad675cfeb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 951100733888911802, guid: 47845b4f83ac4644f9163ad675cfeb27,
         type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 951100733888911802, guid: 47845b4f83ac4644f9163ad675cfeb27,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 951100733888911802, guid: 47845b4f83ac4644f9163ad675cfeb27,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5592540532660660380, guid: 47845b4f83ac4644f9163ad675cfeb27,
         type: 3}
@@ -2338,6 +2353,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: anemymissile
+      objectReference: {fileID: 0}
+    - target: {fileID: 951100733888911776, guid: 47845b4f83ac4644f9163ad675cfeb27,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 951100733888911802, guid: 47845b4f83ac4644f9163ad675cfeb27,
         type: 3}

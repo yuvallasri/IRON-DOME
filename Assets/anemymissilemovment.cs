@@ -24,7 +24,7 @@ public class anemymissilemovment : MonoBehaviour
     {
         var mewposition = new Vector3(Random.Range(-150, 150), 200, 12);
 
-        Instantiate(anemymissile, mewposition, Quaternion.identity);
+        Instantiate(anemymissile, mewposition, this.transform.rotation);
         Instantiate(explosioneffect, transform.position, transform.rotation);
 
         Destroy(gameObject);
