@@ -72,6 +72,7 @@
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Hide_Cursor.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\MissileMovment.cs" />
     <Compile Include="Assets\missiletest\exp.cs" />
