@@ -24,7 +24,7 @@ public class MissileMovment : MonoBehaviour
     }
     void DestroyGameObject()
     {
-        Destroy(gameObject, 6f);
+        Destroy(gameObject, 4f);
     }
     public void OnTriggerEnter(Collider other)
     {

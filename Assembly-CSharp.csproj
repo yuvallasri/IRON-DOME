@@ -79,7 +79,6 @@
     <Compile Include="Assets\missiletest\missiletest.cs" />
     <Compile Include="Assets\myRocket.cs" />
     <Compile Include="Assets\PlayerLook.cs" />
-    <Compile Include="Assets\rocketForce.cs" />
     <None Include="Assets\Sayantan\Props\Small\CruiseMissile\ReadMe.txt" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\Missile Launcher\Info.txt" />

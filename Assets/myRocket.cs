@@ -16,7 +16,6 @@ public class myRocket : MonoBehaviour
         {
 
             Instantiate(rocket, transform.position,transform.rotation);
-            Destroy(rocket, 10);
 
         }
     }
