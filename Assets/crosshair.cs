@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class crosshair2 : MonoBehaviour
+public class crosshair : MonoBehaviour
 {
 
     public GameObject cross;
@@ -31,7 +31,7 @@ public class crosshair2 : MonoBehaviour
         {
             if (hit.collider.tag.Equals("target"))
             {
-
+                
                 red.gameObject.SetActive(true);
                 gray.gameObject.SetActive(false);
             }

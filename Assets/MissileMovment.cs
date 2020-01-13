@@ -13,24 +13,19 @@ public class MissileMovment : MonoBehaviour
     void Update()
     {
         missilerig.velocity = transform.forward * missilevel;
-        if ((GameObject.FindGameObjectsWithTag("target").Length > 0 ))
+        if (GameObject.FindGameObjectsWithTag("target").Length > 0 && GameObject.FindGameObjectsWithTag("redcross").Length > 0)
         {
-            if ((red.activeSelf))
-            {
-
+            
                 rockettarget = GameObject.FindWithTag("target").transform;
                 var missiletargetrotation = Quaternion.LookRotation(rockettarget.position - transform.position);
                 missilerig.MoveRotation(Quaternion.RotateTowards(transform.rotation, missiletargetrotation, turn));
-            }
+        
         }
-
-
         DestroyGameObject();
     }
     void DestroyGameObject()
     {
-
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 4f);
     }
     public void OnTriggerEnter(Collider other)
     {
@@ -41,4 +36,5 @@ public class MissileMovment : MonoBehaviour
     {
         Instantiate(explosioneffect, transform.position, transform.rotation);
     }
+    
 }
