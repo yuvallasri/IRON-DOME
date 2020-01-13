@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\anemymissilemovment.cs" />
+    <Compile Include="Assets\crosshair2.cs" />
     <Compile Include="Assets\EffectExamples\FireExplosionEffects\Prefabs\destroyexpo.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />

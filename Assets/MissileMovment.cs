@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MissileMovment : MonoBehaviour
 {
+    public GameObject  red;
     private Transform rockettarget;
     public Rigidbody missilerig;
     public float turn;
@@ -12,11 +13,15 @@ public class MissileMovment : MonoBehaviour
     void Update()
     {
         missilerig.velocity = transform.forward * missilevel;
-        if (GameObject.FindGameObjectsWithTag("target").Length > 0)
+        if ((GameObject.FindGameObjectsWithTag("target").Length > 0 ))
         {
-            rockettarget = GameObject.FindWithTag("target").transform;
-            var missiletargetrotation = Quaternion.LookRotation(rockettarget.position - transform.position);
-            missilerig.MoveRotation(Quaternion.RotateTowards(transform.rotation, missiletargetrotation, turn));
+            if ((red.activeSelf))
+            {
+
+                rockettarget = GameObject.FindWithTag("target").transform;
+                var missiletargetrotation = Quaternion.LookRotation(rockettarget.position - transform.position);
+                missilerig.MoveRotation(Quaternion.RotateTowards(transform.rotation, missiletargetrotation, turn));
+            }
         }
 
 

@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c4a0b86a07f5534f8d6f443c44d13f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  red: {fileID: 4552845601286009692, guid: a44b6c67ac17cf84d9cb2aa3bac21996, type: 3}
   missilerig: {fileID: 3518643863239982125}
   turn: 10
   missilevel: 300
