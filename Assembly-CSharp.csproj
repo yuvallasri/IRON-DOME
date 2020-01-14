@@ -64,6 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\anemymissilemovment.cs" />
+    <Compile Include="Assets\car_target\carmovment.cs" />
+    <Compile Include="Assets\car_target\carmovment2.cs" />
     <Compile Include="Assets\counthit.cs" />
     <Compile Include="Assets\creating enamys.cs" />
     <Compile Include="Assets\crosshair.cs" />
@@ -90,10 +92,12 @@
     <Compile Include="Assets\missiletest\missiletest.cs" />
     <Compile Include="Assets\myRocket.cs" />
     <Compile Include="Assets\PlayerLook.cs" />
+    <Compile Include="Assets\show_cursor.cs" />
     <Compile Include="Assets\stopwatch.cs" />
     <Compile Include="Assets\timertoflightscene.cs" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\Missile Launcher\Info.txt" />
+    <None Include="Assets\M3A1 Scout Car\readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/yuval/Google Drive/מככלת ספיר - מדעי המחשב/שנה ג/משחקי וידאו/פרויקט גמר/IRON-DOME/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
