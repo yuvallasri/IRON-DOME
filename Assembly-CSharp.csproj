@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\anemymissilemovment.cs" />
     <Compile Include="Assets\counthit.cs" />
+    <Compile Include="Assets\creating enamys.cs" />
     <Compile Include="Assets\crosshair.cs" />
     <Compile Include="Assets\EffectExamples\FireExplosionEffects\Prefabs\destroyexpo.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
@@ -75,6 +76,11 @@
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\flightlevel\counthitflight.cs" />
+    <Compile Include="Assets\flightlevel\flightlook.cs" />
+    <Compile Include="Assets\flightlevel\flightplayermovment.cs" />
+    <Compile Include="Assets\flightlevel\timerflightloss.cs" />
+    <Compile Include="Assets\flightlevel\YOUWIN.cs" />
     <Compile Include="Assets\Hide_Cursor.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\MissileMovment.cs" />
@@ -83,6 +89,7 @@
     <Compile Include="Assets\missiletest\missiletest.cs" />
     <Compile Include="Assets\myRocket.cs" />
     <Compile Include="Assets\PlayerLook.cs" />
+    <Compile Include="Assets\timertoflightscene.cs" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\Missile Launcher\Info.txt" />
     <Reference Include="Unity.Timeline.Editor">
