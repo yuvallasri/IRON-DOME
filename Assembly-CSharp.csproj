@@ -89,6 +89,7 @@
     <Compile Include="Assets\missiletest\missiletest.cs" />
     <Compile Include="Assets\myRocket.cs" />
     <Compile Include="Assets\PlayerLook.cs" />
+    <Compile Include="Assets\stopwatch.cs" />
     <Compile Include="Assets\timertoflightscene.cs" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\Missile Launcher\Info.txt" />
