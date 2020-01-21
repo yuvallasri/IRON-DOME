@@ -162,7 +162,7 @@ MonoBehaviour:
   red: {fileID: 7432363908835745577, guid: 3325f9b2eb8eae44e9618aa4e4bb8ed9, type: 3}
   missilerig: {fileID: 5504887612558527561}
   turn: 10
-  missilevel: 200
+  missilevel: 500
   explosioneffect: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
     type: 3}
 --- !u!114 &7990876260153970574

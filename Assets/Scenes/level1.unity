@@ -2157,8 +2157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ca00f3773e035149aea31782bd82eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedH: 10
-  speedV: 10
+  speedH: 2
+  speedV: 2
 --- !u!114 &1761854924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2625,6 +2625,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1997286275, guid: 2c178ffec41c4fa49a68037b60699ffb, type: 3}
+      propertyPath: m_Size.z
+      value: 54.43759
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997286275, guid: 2c178ffec41c4fa49a68037b60699ffb, type: 3}
+      propertyPath: m_Center.z
+      value: -5.582447
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997286275, guid: 2c178ffec41c4fa49a68037b60699ffb, type: 3}
+      propertyPath: m_Size.x
+      value: 61.283756
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997286275, guid: 2c178ffec41c4fa49a68037b60699ffb, type: 3}
+      propertyPath: m_Center.x
+      value: -20.770891
+      objectReference: {fileID: 0}
     - target: {fileID: 1997286276, guid: 2c178ffec41c4fa49a68037b60699ffb, type: 3}
       propertyPath: life1
       value: 
