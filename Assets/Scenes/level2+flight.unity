@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.14524741, g: 0.4528302, b: 0.14524741, a: 0.35686275}
+  m_Color: {r: 0.14524741, g: 0.4528302, b: 0.14524741, a: 0.61960787}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -967,7 +967,6 @@ GameObject:
   - component: {fileID: 1589844084}
   - component: {fileID: 1589844083}
   - component: {fileID: 1589844082}
-  - component: {fileID: 1589844085}
   - component: {fileID: 1589844086}
   m_Layer: 0
   m_Name: cameraderction
@@ -1005,7 +1004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missilerig: {fileID: 1589844082}
-  missilevel: 100
+  missilevel: 50
 --- !u!4 &1589844084
 Transform:
   m_ObjectHideFlags: 0
@@ -1014,27 +1013,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589844081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 848.7, z: -493}
+  m_LocalPosition: {x: 0, y: 848.7, z: -399}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1740445411}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1589844085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589844081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9d44f69d2c86f84390b23d7d093e3bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedH: 7
-  speedV: 7
 --- !u!82 &1589844086
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1221,6 +1206,7 @@ GameObject:
   - component: {fileID: 1740445412}
   - component: {fileID: 1740445413}
   - component: {fileID: 1740445414}
+  - component: {fileID: 1740445415}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1334,6 +1320,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rocket: {fileID: 1681540647330032435, guid: a6b670a95e7298a43aaab9060e09fe37, type: 3}
+--- !u!114 &1740445415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740445408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d44f69d2c86f84390b23d7d093e3bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedH: 7
+  speedV: 7
 --- !u!1 &1785624121
 GameObject:
   m_ObjectHideFlags: 0

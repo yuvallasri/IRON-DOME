@@ -1224,6 +1224,21 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.6392157
       objectReference: {fileID: 0}
+    - target: {fileID: 822497243521163383, guid: 9283b069ddc390c49b793f31a53d6ff8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 52.9374
+      objectReference: {fileID: 0}
+    - target: {fileID: 822497243521163383, guid: 9283b069ddc390c49b793f31a53d6ff8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 52.9374
+      objectReference: {fileID: 0}
+    - target: {fileID: 822497243521163383, guid: 9283b069ddc390c49b793f31a53d6ff8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 52.9374
+      objectReference: {fileID: 0}
     - target: {fileID: 1691404390121969706, guid: 9283b069ddc390c49b793f31a53d6ff8,
         type: 3}
       propertyPath: m_TagString

@@ -8,7 +8,7 @@ public class flightplayermovment : MonoBehaviour
     public float missilevel;
     void Update()
     {
-        missilerig.velocity = transform.forward * missilevel;
+        missilerig.velocity = transform.forward * (missilevel-10);
       
     }
     
