@@ -84,6 +84,7 @@
     <Compile Include="Assets\flightlevel\flightplayermovment.cs" />
     <Compile Include="Assets\flightlevel\timerflightloss.cs" />
     <Compile Include="Assets\flightlevel\YOUWIN.cs" />
+    <Compile Include="Assets\flightlevel\YOUWIN2.cs" />
     <Compile Include="Assets\Hide_Cursor.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\MissileMovment.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="Assets\show_cursor.cs" />
     <Compile Include="Assets\stopwatch.cs" />
     <Compile Include="Assets\timertoflightscene.cs" />
+    <Compile Include="Assets\timertoflightscene2.cs" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\Missile Launcher\Info.txt" />
     <None Include="Assets\M3A1 Scout Car\readme.txt" />

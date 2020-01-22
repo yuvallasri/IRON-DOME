@@ -8,14 +8,20 @@ public class crosshair : MonoBehaviour
     public GameObject cross;
     public GameObject red;
     public GameObject gray;
-    public GameObject target;
-    
+
+
+    private SpriteRenderer graySpriteRenderer;
+    private SpriteRenderer redSpriteRenderer;
+
     public void Start()
     {
-       
-        gray.gameObject.SetActive(true);
-        red.gameObject.SetActive(false);
 
+        graySpriteRenderer = gray.GetComponent<SpriteRenderer>();
+        redSpriteRenderer = red.GetComponent<SpriteRenderer>();
+        //gray.gameObject.SetActive(true);
+        //red.gameObject.SetActive(false);
+        graySpriteRenderer.enabled = true;
+        redSpriteRenderer.enabled = false;
 
     }
 
@@ -23,25 +29,38 @@ public class crosshair : MonoBehaviour
     void FixedUpdate()
     {
         RaycastHit hit;
-        Ray ray = new Ray(cross.transform.position, cross.transform.forward);
+        //Ray ray = new Ray(cross.transform.position, cross.transform.forward);
         Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity);
-
-
-            if (Physics.Raycast(ray, out hit))
+        if (hit.collider)
         {
-            if (hit.collider.tag.Equals("target"))
+            Debug.DrawLine(transform.position, hit.collider.transform.position, Color.red);
+            if (hit.collider.tag == "target")
             {
-                
-                red.gameObject.SetActive(true);
-                gray.gameObject.SetActive(false);
+                graySpriteRenderer.enabled = false;
+                redSpriteRenderer.enabled = true;
             }
         }
-
         else
         {
-            red.gameObject.SetActive(false);
-            gray.gameObject.SetActive(true);
+            graySpriteRenderer.enabled = true;
+            redSpriteRenderer.enabled = false;
         }
+
+        //if (Physics.Raycast(ray, out hit))
+        //{
+        //    if (hit.collider.tag.Equals("target"))
+        //    {
+
+        //        red.gameObject.SetActive(true);
+        //        gray.gameObject.SetActive(false);
+        //    }
+        //}
+
+        //else
+        //{
+        //    red.gameObject.SetActive(false);
+        //    gray.gameObject.SetActive(true);
+        //}
     }
-    
+
 }

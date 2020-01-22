@@ -4,28 +4,42 @@ using UnityEngine;
 
 public class MissileMovment : MonoBehaviour
 {
-    public GameObject  red;
+    private GameObject cross;
     private Transform rockettarget;
-    public Rigidbody missilerig;
     public float turn;
     public float missilevel;
     public GameObject explosioneffect;
+    private Rigidbody missileRigidBody;
+
+    void Start()
+    {
+        missileRigidBody = GetComponent<Rigidbody>();
+        cross = GameObject.Find("cross");
+    }
     void Update()
     {
-        missilerig.velocity = transform.forward * missilevel;
-        if (GameObject.FindGameObjectsWithTag("target").Length > 0 && GameObject.FindGameObjectsWithTag("redcross").Length > 0)
+        missileRigidBody.velocity = transform.forward * missilevel;
+        RaycastHit hit;
+        Physics.Raycast(cross.transform.position, cross.transform.forward, out hit, Mathf.Infinity);
+        Debug.Log(hit.transform.position);
+        Debug.DrawRay(transform.position, transform.forward);
+
+        if (hit.collider && hit.collider.tag == "target")
         {
-            
-                rockettarget = GameObject.FindWithTag("target").transform;
-                var missiletargetrotation = Quaternion.LookRotation(rockettarget.position - transform.position);
-                missilerig.MoveRotation(Quaternion.RotateTowards(transform.rotation, missiletargetrotation, turn));
-        
+            Debug.Log("inside");
+            rockettarget = hit.transform;
+            var missiletargetrotation = Quaternion.LookRotation(rockettarget.position - transform.position);
+            missileRigidBody.MoveRotation(Quaternion.RotateTowards(transform.rotation, missiletargetrotation, turn));
+
         }
+
         DestroyGameObject();
+
     }
+
     void DestroyGameObject()
     {
-        Destroy(gameObject, 4f);
+        Destroy(gameObject, 5f);
     }
     public void OnTriggerEnter(Collider other)
     {
@@ -36,5 +50,5 @@ public class MissileMovment : MonoBehaviour
     {
         Instantiate(explosioneffect, transform.position, transform.rotation);
     }
-    
+
 }

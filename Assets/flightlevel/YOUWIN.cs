@@ -13,7 +13,7 @@ public class YOUWIN : MonoBehaviour
         target = GameObject.FindWithTag("target");
         if (GameObject.FindGameObjectsWithTag("target").Length < 1)
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
 
         }
     }
